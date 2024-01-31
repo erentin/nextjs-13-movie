@@ -21,5 +21,6 @@ export default async function Home({ params }) {
         id: params.category?.[0] ?? '',
         movies: selectedCategory ? Movies.results.slice(0, 7) : [],
     }} />;
+    
 }
 

@@ -15,7 +15,7 @@ export default function HomeContainer({ selectedCategory }) {
       <FeaturedMovie movie={Movies.results[0]} />
       <Categories categories={Genres.genres.slice(0, 5)} />
       {
-        selectedCategory.movies.length > 0 && (
+        selectedCategory.movies.lenght > 0 && (
           <MoviesSection title={genres.find( (genre) => genre.id.toString() === selectedCategory.id ).name} movies={selectedCategory.movies} />
         )
       }
